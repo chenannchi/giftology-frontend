@@ -143,6 +143,17 @@ const deleteItem = async (wishlistId, itemId) => {
   }
 }
 
+const showItem = async (wishlistId, itemId)=>{
+  try {
+    const res = await fetch(`${BASE_URL}/${wishlistId}/item/${itemId}`, {
+      headers: { "Authorization": `Bearer ${tokenService.getToken()}`}
+    })
+    return res.json()
+  } catch (error) {
+    console.log(error)
+  }
+}
+
 export {
   index,
   show,
@@ -153,5 +164,6 @@ export {
   createItem,
   updateItem,
   updatePurchased,
-  deleteItem
+  deleteItem,
+  showItem
 }
