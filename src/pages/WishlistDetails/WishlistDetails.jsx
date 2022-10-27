@@ -28,8 +28,9 @@ const WishlistDetails = ({user, items, setItems, setWishlistId, handleDeleteItem
   }, [id, setItems, setWishlistId])
 
   return (
-    <main className={styles.page}>
+    <main>
       <article className={styles.container}>
+        <div className={styles.wishlistDetails}>
           <div className={styles.wishlistName}>{wishlist.name}</div>
           <div className={styles.discription}>
             <p>{wishlist.description}</p>
@@ -39,8 +40,9 @@ const WishlistDetails = ({user, items, setItems, setWishlistId, handleDeleteItem
               <button>Add Item</button>
             </Link>
           :
-            <div></div>
+            null
           }
+        </div>
         <div className={styles.cardsContainer}> 
         {items.length ?
           items.map((item, idx) => (
