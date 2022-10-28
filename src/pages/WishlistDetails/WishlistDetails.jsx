@@ -48,7 +48,7 @@ const WishlistDetails = ({user, items, setItems, setWishlistId, handleDeleteItem
           items.map((item, idx) => (
             <ItemCard user={user} key={idx} item={item} handleDeleteItem={handleDeleteItem} wishlistId={id} author ={wishlist.author}/>
           ))
-          : <p>No wishlists yet!</p>
+          : <p>No items yet!</p>
         }
         </div>
       </article>
