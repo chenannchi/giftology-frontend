@@ -4,69 +4,75 @@
   justify-content: center;
   flex-direction: column;
   padding: 1% 3%;
-  max-width: 300px;
-  min-height: 600px;
-  margin: 5%;
-  background-color: #EBD9DD;
+  width: 310px;
+  height: 600px;
+  margin: 1%;
+  background-color: #AC7088;
   padding: 20px;
-  
+  box-shadow: -2px 10px 10px 5px rgba(0,0,0,0.25);
+  color: #e7dadd;
 }
 
 .container .img{
-  min-height: 250px;
-  width:100%;
-  border-radius: 10px;
+  height: 250px;
+  width: 100%;
+  border-radius: 0%;
+  object-fit: contain;
+}
+
+.itemName {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 18px 0 0 0;
+  text-align: center;
 }
 
 .purchased{
   display: flex;
+  flex-direction: row;
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
-  color: white;
+  color: white; 
 }
 
 .purchasedInput{
   display: flex;
-  justify-content: center;
   align-items: center;
   background-color: #AC7088;
-  height: 31px;
+  height: 30px;
   border-radius: 5px;
-  padding-left: 10px;
-  font-weight: bold;
+  font-weight: bold; 
+  width: 70%;
+  font-size: 15px;
 }
 
 .purchasedInput:hover {
   cursor: pointer;
-  background-color: white;
+  background-color: #eadde0;
   color: #AC7088;
   border: 1px solid #AC7088;
+  padding: 5px;
+  width: 100%;
 }
 
-.purchased button a{
-  color: white;
+.buyBtn {
+  border-radius: 10px;
 }
 
-.purchased button:hover {
-  cursor: pointer;
-  background-color: white;
-  color: #AC7088;
-}
-
-.purchased button a:hover {
-  color: #AC7088;
+.buy {
+  width: 30%;
 }
 
 .bottomBtns {
-  margin-top: 30px;
   display: flex;
+  flex-direction: column;
+  margin-top: 10px;
   width: 100%;
-  justify-content: space-around;
 }
 
-.bottomBtns button{
-  color: white;
+.bottomBtns > button {
+  width: 100%;
 }
 
 .bottomBtns button:hover{ 
@@ -82,12 +88,46 @@
 
 .bottomBtns a:hover {
   color: #AC7088;
+  background-color: #eadde0;
 }
 
 .Btns {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 15px;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 200px;
+}
+
+.bottomBtns > .Btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  padding: 8px;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 200px;
+}
+
+.category {
+  width: 100%;
+  padding: 18px 0;
+}
+
+.description {
+  width: 100%;
+  padding-bottom: 18px ;
+}
+
+.description > div {
+  overflow: scroll;
+  height: 60px;
+  padding-right: 12px;
 }
 
 a{
