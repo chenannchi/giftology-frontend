@@ -39,8 +39,8 @@ const ProfileDetails = () => {
           <h2>WISHLISTS</h2>
           <div className={styles.wishlistContainer}>
           {currProfile.wishlists.length
-            ? currProfile.wishlists.map((wishlist) => (
-              <div className={styles.wishlistBox}>
+            ? currProfile.wishlists.map((wishlist, idx) => (
+              <div className={styles.wishlistBox} key={idx} >
                 <div className={styles.title}>{wishlist.name}</div>
                 <div>
                   <Link to={`/wishlists/${wishlist._id}`}>

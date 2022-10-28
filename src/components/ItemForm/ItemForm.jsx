@@ -11,6 +11,7 @@ const ItemForm = (props) => {
         id="name-input"
         value={props.itemForm.name}
         placeholder="Name"
+        autoComplete="off"
         onChange={props.handleChange}
       />
       <label htmlFor="category-input">Category</label>
@@ -49,6 +50,7 @@ const ItemForm = (props) => {
         id="url-input"
         value={props.itemForm.url}
         placeholder="URL"
+        autoComplete="off"
         onChange={props.handleChange}
       />
       <label htmlFor="img-input">Image</label>
@@ -59,6 +61,7 @@ const ItemForm = (props) => {
         id="img-input"
         value={props.itemForm.img}
         placeholder="Image URL"
+        autoComplete="off"
         onChange={props.handleChange}
       />
       <button type="submit">Add</button>
