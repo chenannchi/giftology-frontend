@@ -16,8 +16,11 @@ Also, allow for reducing resource waste generated from gifting gone wrong.
   * [Backend of Giftology](https://github.com/creyes25/giftology-backend)
 
 ## Screenshots: 
- ![alt text]()
- ![alt text]()
+ ![alt text](./../public/screenshots/landing.png)
+ ![alt text](./public/screenshots/wishlist.png)
+ ![alt text](./public/screenshots/landing-mobile.png)
+ ![alt text](./public/screenshots/wishlist-mobile.png)
+
 
 ## Technologies Used: 
   * JavaScript
@@ -40,7 +43,7 @@ Also, allow for reducing resource waste generated from gifting gone wrong.
 
 ## Credits: 
   * icons/avatar: https://www.flaticon.com/free-icons/animal-avatar
-  * Fonts : 
+  * Fonts : https://fonts.google.com/specimen/Oxygen?query=oxygen
   * Images: https://unsplash.com/
 
 
