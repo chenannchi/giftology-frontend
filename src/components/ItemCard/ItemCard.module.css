@@ -125,7 +125,8 @@
 }
 
 .description > div {
-  overflow:auto;
+  /* overflow:auto;
+  scrollbar-gutter: auto; */
   height: 60px;
   padding-right: 12px;
 }
@@ -133,5 +134,9 @@
 a{
   text-decoration: none;
   color: white;
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
 }
 
