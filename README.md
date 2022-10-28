@@ -7,7 +7,7 @@ It allows users to improve their gift-giving experience by facilitating the comm
 Also, allow for reducing resource waste generated from gifting gone wrong.
 
 ## Getting Started: #
-  * Check out Giftology 👉🏼 [here](https://giftology-madeez.netlify.app/wishlists)
+  * Check out Giftology 👉🏼 [here](https://giftology-madeez.netlify.app)
 
 ## Planning Materials
   * [Trello](https://trello.com/b/HzfImzvi/giftology) 
