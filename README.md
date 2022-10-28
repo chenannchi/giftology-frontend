@@ -16,7 +16,7 @@ Also, allow for reducing resource waste generated from gifting gone wrong.
   * [Backend of Giftology](https://github.com/creyes25/giftology-backend)
 
 ## Screenshots: 
- ![alt text](./../public/screenshots/landing.png)
+ ![alt text](./public/screenshots/landing.png)
  ![alt text](./public/screenshots/wishlist.png)
  ![alt text](./public/screenshots/landing-mobile.png)
  ![alt text](./public/screenshots/wishlist-mobile.png)
