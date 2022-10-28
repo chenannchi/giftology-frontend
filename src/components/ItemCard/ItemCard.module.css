@@ -125,7 +125,7 @@
 }
 
 .description > div {
-  overflow: scroll;
+  -ms-overflow-style: scroll;
   height: 60px;
   padding-right: 12px;
 }
