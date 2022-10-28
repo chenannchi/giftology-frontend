@@ -1,3 +1,4 @@
+
 .container{
   background-color: #EBD9DD;
   display: flex;
@@ -12,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  width: 100%;
 }
 
 .wishlistDetails > .wishlistName {
@@ -29,13 +31,13 @@
   width: 100%;
 }
 
-.discription{
+.description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 85px;
-  width: 100%;
-  max-width: 240px;
-  border-radius: 12px;
-  border: 2px;
-  box-shadow:  2px 2px 5px gray;
+  width: 60%;
+  border-bottom: 2px solid black;
   margin-top: 30px;
   margin-bottom: 25px;
   font-size: 14px;
@@ -43,8 +45,12 @@
   line-height: 1.5rem;
   padding: 12px;
   text-align: center;
-  background-color: #e2bfc6;
 }
+
+.description > p {
+  max-width: 240px;
+}
+
 
 .container button{
   width: 120px;
