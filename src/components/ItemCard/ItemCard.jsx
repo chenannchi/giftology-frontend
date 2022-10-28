@@ -24,7 +24,7 @@ const ItemCard = ({ item, wishlistId, handleDeleteItem, user, author }) => {
     <>
       <article className={styles.container}>
         <img src={item.img} alt="img" className={styles.img} />
-        <h2>
+        <h2 className={styles.itemName}>
           {item.name}
         </h2>
         <span>Category:</span>
