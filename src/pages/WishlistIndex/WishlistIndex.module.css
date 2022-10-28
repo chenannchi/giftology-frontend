@@ -5,13 +5,14 @@
   align-items: center;
   min-height: 95vh;
   justify-content: flex-start;
+  padding-top: 30px;
 }
 
 .innerContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 10vh;
+  margin-top: 4vh;
   margin-bottom: 20px;
 }
 

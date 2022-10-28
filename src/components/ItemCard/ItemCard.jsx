@@ -27,44 +27,54 @@ const ItemCard = ({ item, wishlistId, handleDeleteItem, user, author }) => {
         <h2 className={styles.itemName}>
           {item.name}
         </h2>
-        <span>Category:</span>
-        <h5>{item.category}</h5>
-        <span>Description:</span>
-        <p>
-          {item.desc}
-        </p>
+        <div className={styles.category} >
+          <div>
+            <span>Category: </span>{item.category}
+          </div>
+        </div>
+        <div className={styles.description}>
+          <div>
+            <span>Description: </span>{item.desc}
+          </div>
+        </div>
+        <div>
+          
+        </div>
         <div className={styles.purchased}>
-        
-          <a href={item.url} target="_blank" rel="noreferrer" className={styles.Btns}><button >Buy </button></a>
-          {/* 🛒 */}
-        
-        <div className={styles.purchasedInput}>
-          <label htmlFor="purchased-input">Purchased</label>
-          <input
-            type="checkbox"
-            id="purchased-input"
-            name="purchased"
-            value={itemPurchase}
-            onChange={() => handlePurchaseItem(item._id, wishlistId)}
-            checked={itemPurchase}
-            disabled={
-              item.purchased.owner === user.profile || !item.purchased.owner ? false : true
-            }
-          />
+          <div className={styles.buy}>
+            <a href={item.url} target="_blank" rel="noreferrer" className={styles.buyBtn}><button >Buy</button></a>
+          </div>
+          <div>
+            <div className={styles.purchasedInput}>
+              <input
+                type="checkbox"
+                id="purchased-input"
+                name="purchased"
+                value={itemPurchase}
+                onChange={() => handlePurchaseItem(item._id, wishlistId)}
+                checked={itemPurchase}
+                disabled={
+                  item.purchased.owner === user.profile || !item.purchased.owner ? false : true
+                }
+              />
+              <label htmlFor="purchased-input"> Purchased</label>
+            </div>
           </div>
         </div>
         <div className={styles.bottomBtns}>
-        {user.profile === author ?
-          <button className={styles.Btns}><Link to={`/item/${item._id}/edit-item`} state={item}>Edit</Link></button>
-          : 
-          null
-        }
-        {user.profile === author ?
-          <button onClick={() => handleDeleteItem(item._id) } className={styles.Btns}>Delete</button>
-          :
-          null
-        }
+          {user.profile === author ?
+            <button className={styles.Btns}><Link to={`/item/${item._id}/edit-item`} state={item}>Edit</Link></button>
+            : 
+            null
+          }
+          {user.profile === author ?
+            <button onClick={() => handleDeleteItem(item._id) } className={styles.Btns}>Delete</button>
+            :
+            null
+          }
         </div>
+        
+
       </article>
     </>
   )
